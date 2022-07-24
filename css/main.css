@@ -1,0 +1,123 @@
+body {
+    background: linear-gradient(37deg, #5afb00, #3e7d1b, #a9bd9e, #d7591f, #5e188c, #1d022f, #030303);
+    background-size: 1400% 1400%;
+    
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 94%}
+    50%{background-position:100% 7%}
+    100%{background-position:0% 94%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 94%}
+    50%{background-position:100% 7%}
+    100%{background-position:0% 94%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 94%}
+    50%{background-position:100% 7%}
+    100%{background-position:0% 94%}
+}
+
+@font-face {
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url('../fonts/fredoka-one-v13-latin-regular.woff2') format('woff2'), 
+         url('../fonts/fredoka-one-v13-latin-regular.woff') format('woff'); 
+}
+
+body {
+    font-family: 'Fredoka One' , 'Roboto';
+}
+
+#list {
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.text {
+    font-family: 'Fredoka One';
+    font-weight: 400;
+    margin-bottom: 20px;  
+    text-align: center;
+    color: rgb(143, 99, 17);
+}
+
+
+li {
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 3px 3px rgb(129, 87, 9);
+}
+
+li:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 5px orange;
+}
+/* copyrighted by Mirmuhsin */
+
+li:active {
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 10px orange;
+}
+
+/* copyrighted by Mirmuhsin */
+
+img {
+    object-fit: contain;
+}
+@media only screen and (max-width: 950px) {
+    .logo {
+        width: 250px;
+    }
+
+    li {
+        background-color: #fff;
+        border-radius: 20px;
+        transition: all 0.5s ease;
+        box-shadow: 0px 0px 3px 3px rgb(129, 87, 9);
+    }
+    
+    li:hover {
+        transition: all 0.5s ease;
+        transform: scale(1.05);
+        box-shadow: 0px 0px 5px 5px orange;
+    }
+}
+/* copyrighted by Mirmuhsin */
+@media only screen and (max-width: 650px) {
+    #list {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .logo {
+        width: 250px;
+    }
+
+    li {
+        background-color: #fff;
+        border-radius: 20px;
+        transition: all 0.5s ease;
+        box-shadow: 0px 0px 3px 3px rgb(129, 87, 9);
+    }
+/* copyrighted by Mirmuhsin */
+    
+    li:hover {
+        transition: all 0.5s ease;
+        transform: scale(1.05);
+        box-shadow: 0px 0px 5px 5px orange;
+    }
+}

@@ -4,27 +4,24 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./images/png-transparent-movie-icons-film-clapperboard-cinema-icon-movie-clapper-s-angle-text-logo-thumbnail.png" type="image/x-icon">
 	<link rel="stylesheet" href="./css/bootstrap.css">
 	<link rel="stylesheet" href="./css/main.css">
-	<title></title>
+	<title>PokeMove</title>
 </head>
-<body>
-	<header class="header">
-		<div class="container">
-		</div>
-	</header>
-	
-	<main>
-		<section class="hero"> 
-			<div class="container">
-			</div>
-		</section>        
-	</main>
-	
-	<footer class="footer">
-		<div class="container">
-		</div>
-	</footer>	
+<body class="container">
+	<h2 class="text-center mt-5	text-success fs-1 fw-bold">What do you need?</h2>
+	<div class="mt-5 d-flex justify-content-center align-items-center gap-5">
+		<button id="movies" class="btn btn-primary" type="button">Movies</button>
+		<button id="pokemon" class="btn btn-warning" type="button">Pokemon</button>
+		<button id="random" class="btn btn-danger" type="button">Random</button>
+		<button id="clear" class="btn btn-secondary" type="button">Clear all</button>
+	</div>
+	<div class="d-flex">
+		<h2>Total: <span id="total">0</span></h2>
+	</div>
+	<ul id="list" class="list d-flex list-unstyled flex-wrap justify-content-between">
+	</ul>
 	<script src="./js/main.js"></script>
 	<script src="./js/bootstrap.js"></script>
 </body>
